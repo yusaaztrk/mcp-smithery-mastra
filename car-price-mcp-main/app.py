@@ -20,7 +20,6 @@ def getCarBrands() -> str:
         # Format brands information
         brands_info = "🚗 **Car Brands Available** 🚗\n\n"
         
-        # Group brands by first letter for better organization
         brands_by_letter = {}
         for brand in brands:
             first_letter = brand['nome'][0].upper()
