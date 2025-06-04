@@ -12,7 +12,7 @@ import { carPriceAgent } from './agents/car-price-agent';
 export const mastra = new Mastra({
   agents: { weatherAgent, dictionaryAgent, movieAgent, zooAnimalsAgent, carPriceAgent },
   storage: new LibSQLStore({
-    // stores telemetry, evals, ... into memory storage, if it needs to persist, change to file:../mastra.db
+    
     url: ":memory:",
   }),
   logger: new PinoLogger({
