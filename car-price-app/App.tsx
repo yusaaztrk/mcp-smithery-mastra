@@ -55,7 +55,6 @@ export default function App() {
 
       setCarInfo(carText);
 
-      // Add to history if not already present
       if (!history.includes(carQuery.toLowerCase())) {
         setHistory(prev => [carQuery.toLowerCase(), ...prev.slice(0, 9)]); // Keep last 10 searches
       }
